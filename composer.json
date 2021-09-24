@@ -1,0 +1,34 @@
+{
+    "name": "daalvand/pubsub",
+    "description": "A package for pub sub system",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mehdi Daalvand",
+            "email": "mdaalvand@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Daalvand\\PubSub\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PubSubServiceProvider"
+            ],
+            "aliases": {
+                "Subscriber": "Daalvand\\PubSub\\Facades\\Subscriber",
+                "Publisher": "Daalvand\\PubSub\\Facades\\Publisher"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4|^8.0",
+        "daalvand/kafka": "^1",
+        "opis/closure" : "^3.6"
+    }
+}
