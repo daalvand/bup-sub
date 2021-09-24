@@ -1,6 +1,6 @@
 # PUB SUB
 
-* This package used for publish and subscribe with redis or kafka
+* This package used to publish and subscribe with Regis or Kafka
 
 # installation
 ## install package
